@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container,
+.containerFirstTask,
+.containerSecondTask {
+  width: min(100% - 4rem, 20rem);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.container .main {
+  display: inline-block;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.container .main .btn img {
+  width: 150px;
+  height: 150px;
+  transition: all 1s;
+  margin-top: 50px;
+}
+
+.container .main .btn:hover img {
+  transform: scale(1.7);
+}
+
+.containerFirstTask {
+  background-color: black;
+  position: relative;
+}
+
+.containerFirstTask .mainFirstTask img {
+  width: 540px;
+  height: 800px;
+  padding: 80px;
+}
+
+.containerFirstTask .mainFirstTask .btn p {
+  position: absolute;
+  top: 5px;
+  left: 40px;
+  color: white;
+  font-size: 45px;
+  font-family: 'Amatic SC', cursive;
+}
+
+.containerFirstTask .mainFirstTask .btn a {
+  width: 10px;
+  height: 10px;
+  /* background-color: rgb(255, 255, 255); */
+  box-shadow: 0 0 55px 55px white;
+  top: 115px;
+  right: 272px;
+  border-radius: 100%;
+  position: absolute;
+}
+
+.containerFirstTask .mainFirstTask .pulse .btn a {
+  animation: pulse 5s infinite;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5),
+      inset 0 0 10px 1px rgba(0, 0, 0, 0.5);
+  }
+  25% {
+    -webkit-box-shadow: 0 0 30px 5px rgba(130, 130, 130, 0.822),
+      inset 0 0 30px 5px rgba(130, 130, 130, 0.5);
+  }
+
+  50% {
+    -webkit-box-shadow: 0 0 30px 20px rgb(255, 255, 255),
+      inset 0 0 30px 20px rgb(255, 255, 255);
+  }
+  75% {
+    -webkit-box-shadow: 0 0 30px 5px rgba(130, 130, 130, 0.822),
+      inset 0 0 30px 5px rgba(130, 130, 130, 0.5);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5),
+      inset 0 0 10px 1px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.containerSecondTask {
+  background-color: bisque;
+  margin-top: 100px;
+  position: relative;
+}
+
+.containerSecondTask .mainSecondTask img {
+  width: 600px;
+  height: 450px;
+  padding: 50px;
+}
+
+.containerSecondTask .mainSecondTask .btn p {
+  position: absolute;
+  top: 5px;
+  left: 15px;
+  font-size: 35px;
+  font-family: 'Oswald', sans-serif;
+  color: #202020ec;
+}
+
+.containerSecondTask .mainSecondTask .btn a img {
+  width: 40px;
+  height: 30px;
+  position: absolute;
+  bottom: 8px;
+  right: 0px;
+  padding: 0;
+}
